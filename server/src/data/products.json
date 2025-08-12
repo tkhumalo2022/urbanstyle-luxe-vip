@@ -1,0 +1,44 @@
+[
+  {
+    "id": "mens-blazer",
+    "name": "Limited Edition Black Blazer",
+    "priceZAR": 12499,
+    "image": "https://images.unsplash.com/photo-1520975916090-3105956dac38?q=80&w=1200&auto=format&fit=crop",
+    "gender": "men"
+  },
+  {
+    "id": "womens-dress",
+    "name": "Sleek Evening Dress",
+    "priceZAR": 12999,
+    "image": "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1200&auto=format&fit=crop",
+    "gender": "women"
+  },
+  {
+    "id": "mens-coat",
+    "name": "Structured Wool Long Coat",
+    "priceZAR": 13999,
+    "image": "https://images.unsplash.com/photo-1516826957135-700dedea698c?q=80&w=1200&auto=format&fit=crop",
+    "gender": "men"
+  },
+  {
+    "id": "womens-trench",
+    "name": "Belted Trench Coat",
+    "priceZAR": 14499,
+    "image": "https://images.unsplash.com/photo-1548142813-c348350df52b?q=80&w=1200&auto=format&fit=crop",
+    "gender": "women"
+  },
+  {
+    "id": "mens-chelsea-boots",
+    "name": "Polished Chelsea Boots",
+    "priceZAR": 11999,
+    "image": "https://images.unsplash.com/photo-1520256862855-398228c41684?q=80&w=1200&auto=format&fit=crop",
+    "gender": "men"
+  },
+  {
+    "id": "womens-handbag",
+    "name": "Structured Leather Handbag",
+    "priceZAR": 8999,
+    "image": "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=1200&auto=format&fit=crop",
+    "gender": "women"
+  }
+]

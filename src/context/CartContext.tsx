@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useMemo, useState } from "react";
+import React, { createContext, useContext, useEffect, useMemo, useState } from "react";
 import type { Product } from "@/data/products";
 
 export interface CartItem {
@@ -26,6 +26,25 @@ const CartContext = createContext<CartContextValue | undefined>(undefined);
 export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [items, setItems] = useState<CartItem[]>([]);
   const [isOpen, setOpen] = useState(false);
+
+  // Load from localStorage on mount
+  useEffect(() => {
+    try {
+      const raw = localStorage.getItem("usl_cart_v1");
+      if (raw) setItems(JSON.parse(raw));
+    } catch (e) {
+      console.error("Failed to load cart from localStorage", e);
+    }
+  }, []);
+
+  // Persist to localStorage when items change
+  useEffect(() => {
+    try {
+      localStorage.setItem("usl_cart_v1", JSON.stringify(items));
+    } catch (e) {
+      console.error("Failed to save cart to localStorage", e);
+    }
+  }, [items]);
 
   const addItem: CartContextValue["addItem"] = (product, options = {}, quantity = 1) => {
     const key = `${product.id}-${options.size ?? "_"}-${options.color ?? "_"}`;

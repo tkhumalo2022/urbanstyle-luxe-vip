@@ -71,3 +71,48 @@ Yes, you can!
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
 Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+
+---
+
+# UrbanStyle Luxe – Full Project (Frontend + Backend)
+
+This repo now includes a standalone Express server (in `/server`) with API endpoints and a static CSS showcase page in `/public/css.html`.
+
+## Quick start
+
+Frontend (Vite):
+```bash
+npm i
+npm run dev
+```
+
+Backend (Express):
+```bash
+cd server
+cp .env.example .env
+npm i
+npm run dev
+```
+
+Open http://localhost:5174/api/health to verify the server.
+
+## API
+- GET /api/products – list products
+- GET /api/products/:id – product detail
+- POST /api/support – JSON { name, email, subject, message }
+
+## Customer Support Form
+- The form on Home and Contact posts to `/api/support` and shows success/error toasts.
+- If the backend isn’t running, you’ll see an error toast (by design for demo).
+
+## Cart Persistence
+- Cart items persist with `localStorage` under key `usl_cart_v1`.
+
+## CSS Showcase
+- Visit `/css.html` for a minimalist monochrome component library (no build needed).
+
+## WEDE Deliverables
+- Wireframes: Recommend home, collections, product, cart/checkout, contact.
+- Site map: Home, Men, Women, Product, Cart/Checkout, About, Lookbook, Contact, CSS Showcase.
+- Testing: Manual UX flows (add to cart, update qty, checkout form), responsive checks, API tests with Postman for `/api/support` and `/api/products`.
+

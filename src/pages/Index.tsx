@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { SEO } from "@/components/SEO";
 import { ChatbotWidget } from "@/components/ChatbotWidget";
-
+import { SupportForm } from "@/components/SupportForm";
 const Index = () => {
   return (
     <div>
@@ -24,6 +24,12 @@ const Index = () => {
       <section className="py-12">
         <h2 className="font-display text-2xl mb-4">Exclusive Drops</h2>
         <p className="text-muted-foreground">Limited runs. High-contrast statements. Precision in every seam.</p>
+      </section>
+
+      <section className="py-12">
+        <h2 className="font-display text-2xl mb-2">Concierge Support</h2>
+        <p className="text-muted-foreground mb-6">Questions about fit, styling, or availability? Speak to our team.</p>
+        <SupportForm />
       </section>
 
       <ChatbotWidget />
