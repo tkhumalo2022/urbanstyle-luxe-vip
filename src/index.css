@@ -124,4 +124,6 @@ All colors MUST be HSL.
   .hover-scale:hover { transform: scale(1.05); }
 
   .pulse { animation: pulse 2s cubic-bezier(0.4,0,0.6,1) infinite; }
+  .animate-fade-in { animation: fade-in 0.3s ease-out; }
+  .animate-scale-in { animation: scale-in 0.2s ease-out; }
 }
