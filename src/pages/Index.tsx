@@ -13,7 +13,7 @@ const Index = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-background/20" />
         <div className="relative z-10 text-center px-6 py-16">
           <h1 className="font-display text-4xl md:text-6xl tracking-wide mb-4">Monochrome. Minimal. Majestic.</h1>
-          <p className="text-muted-foreground max-w-2xl mx-auto mb-8">Invitation-only luxury inspired by Karl Lagerfeld Paris. Shot on South African talent.</p>
+          <p className="text-foreground/90 max-w-2xl mx-auto mb-8 font-medium">Invitation-only luxury inspired by Karl Lagerfeld Paris. Shot on South African talent.</p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
             <Link to="/collections/men"><Button variant="hero" size="lg" className="min-w-40">Shop Men</Button></Link>
             <Link to="/collections/women"><Button variant="premium" size="lg" className="min-w-40">Shop Women</Button></Link>
