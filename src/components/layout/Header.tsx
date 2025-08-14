@@ -18,7 +18,7 @@ export const Header = () => {
   return (
     <header className="sticky top-0 z-40 bg-background/70 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b">
       <div className="container mx-auto flex items-center justify-between py-3">
-        <Link to="/" className="font-display text-2xl tracking-wide hover-scale" aria-label="UrbanStyle Luxe Home">
+        <Link to="/" className="font-display text-4xl md:text-5xl font-bold tracking-wider hover-scale text-gradient bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent" aria-label="UrbanStyle Luxe Home">
           UrbanStyle Luxe
         </Link>
 
