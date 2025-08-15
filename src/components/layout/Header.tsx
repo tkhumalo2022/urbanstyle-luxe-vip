@@ -18,16 +18,27 @@ export const Header = () => {
   return (
     <header className="sticky top-0 z-40 bg-background/70 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b">
       <div className="container mx-auto flex items-center justify-between py-3">
-        <Link to="/" className="font-display text-4xl md:text-5xl font-bold tracking-wider hover-scale text-gradient bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent" aria-label="UrbanStyle Luxe Home">
-          UrbanStyle Luxe
-        </Link>
+        {/* Logo placeholder - using text as logo */}
+        <div className="flex items-center gap-4">
+          <Link to="/" className="flex items-center gap-3" aria-label="UrbanStyle Luxe Home">
+            <div className="w-8 h-8 bg-primary rounded-full"></div>
+            <div>
+              <h3 className="font-display text-xl md:text-2xl font-bold tracking-wider text-gradient bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
+                UrbanStyle Luxe
+              </h3>
+              <p className="text-xs text-muted-foreground hidden md:block">Monochrome Excellence</p>
+            </div>
+          </Link>
+        </div>
 
-        <nav className="hidden md:flex items-center gap-6" aria-label="Primary">
-          <NavLink to="/collections/men" className="story-link">Men</NavLink>
-          <NavLink to="/collections/women" className="story-link">Women</NavLink>
-          <NavLink to="/lookbook" className="story-link">Lookbook</NavLink>
-          <NavLink to="/about" className="story-link">About</NavLink>
-          <NavLink to="/contact" className="story-link">Contact</NavLink>
+        <nav className="hidden md:flex items-center gap-6" aria-label="Primary navigation">
+          <ul className="flex items-center gap-6">
+            <li><NavLink to="/collections/men" className="story-link">Men</NavLink></li>
+            <li><NavLink to="/collections/women" className="story-link">Women</NavLink></li>
+            <li><NavLink to="/lookbook" className="story-link">Lookbook</NavLink></li>
+            <li><NavLink to="/about" className="story-link">About</NavLink></li>
+            <li><NavLink to="/contact" className="story-link">Contact</NavLink></li>
+          </ul>
         </nav>
 
         <div className="flex items-center gap-3">
